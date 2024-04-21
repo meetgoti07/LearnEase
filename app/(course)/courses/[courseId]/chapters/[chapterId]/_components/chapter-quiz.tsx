@@ -61,7 +61,7 @@ export const ChapterQuiz = ({chapterId,userId, courseId, nextChapterId}: Chapter
 const QuizComponent = ({ quizData, userId, nextChapterId, chapterId, courseId, router }: chapInnerQuiz) => {
 
     const [showQuiz, setShowQuiz] = useState(true);
-    const [score, setScore] = useState(null);
+    const [score, setScore] = useState<{ total: number; obtained: number; passed: boolean } | null>(null);
     const [selectedAnswers, setSelectedAnswers] = useState<number[]>([]);
 
     const handleChange = (questionIndex: number, optionIndex: number) => {
