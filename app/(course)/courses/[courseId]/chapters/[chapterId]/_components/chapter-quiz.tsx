@@ -50,7 +50,7 @@ export const ChapterQuiz = ({chapterId,userId, courseId, nextChapterId}: Chapter
         fetchQuizData().then(r => r);
     }, [chapterId, courseId]);
 
-    // Render your component based on the state of quizData
+    // Render your component based on the state of quizDataa
     if (quizData === null) {
         return <div>Loading...</div>;
     } else {
