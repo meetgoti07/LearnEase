@@ -5,6 +5,8 @@ import axios from "axios";
 import { db } from "@/lib/db";
 import { PrismaClient } from '@prisma/client';
 
+
+
 const { Video } = new Mux(
   process.env.MUX_TOKEN_ID!,
   process.env.MUX_TOKEN_SECRET!,
@@ -124,7 +126,6 @@ export async function PATCH(
       }
     });
 
-    if (values.videoUrl) {
       const existingMuxData = await db.muxData.findFirst({
         where: {
           chapterId: params.chapterId,
@@ -166,7 +167,6 @@ export async function PATCH(
           description: quizData.data.response.transcript, // Assuming the transcript is in quizData.transcript
         }
       });
-      const db = new PrismaClient();
 
 
       const existingQuiz = await db.quiz.findFirst({
@@ -210,7 +210,7 @@ export async function PATCH(
 
       // Update the Quiz model with the quiz data
 
-    }
+    
 
 
     return NextResponse.json(chapter);

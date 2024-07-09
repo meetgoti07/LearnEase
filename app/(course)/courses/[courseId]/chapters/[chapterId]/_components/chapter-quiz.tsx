@@ -129,8 +129,8 @@ const QuizComponent = ({ quizData, userId, nextChapterId, chapterId, courseId, r
             </div>
         ) : (
             <div>
-                <p>You scored {score.obtained} out of {score.total}.</p>
-                {score.passed ? <p>You passed the test!</p> : <p>Your score is less than 80%. Please try again.</p>}
+                <p>You scored {score?.obtained} out of {score?.total}.</p>
+                {score?.passed ? <p>You passed the test!</p> : <p>Your score is less than 80%. Please try again.</p>}
             </div>
         )}
     </div>
