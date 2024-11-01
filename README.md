@@ -2,7 +2,6 @@ About Project
 
 LearnEase is the Smart LMS System, which offers Chapter Wise Course playback and AI Quiz Generation and Grading.
 
-
 ### Prerequisites
 
 **Node version 18.x.x**
@@ -14,7 +13,6 @@ npm i
 ```
 
 ### Setup .env file
-
 
 ```js
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
@@ -31,6 +29,8 @@ MUX_TOKEN_SECRET=
 NEXT_PUBLIC_APP_URL=http://localhost:3000
 NEXT_PUBLIC_TEACHER_ID=
 ```
+
+
 
 ### Setup Prisma
 
