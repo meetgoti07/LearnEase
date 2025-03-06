@@ -31,7 +31,6 @@ NEXT_PUBLIC_TEACHER_ID=
 ```
 
 
-
 ### Setup Prisma
 
 Add Postgres Database
@@ -41,6 +40,7 @@ npx prisma generate
 npx prisma db push
 
 ```
+
 
 ### Start the app
 
