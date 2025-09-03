@@ -1,5 +1,6 @@
 # LearnEase - Smart Learning Management System
 
+[![Watch Demo](https://img.shields.io/badge/Watch_Demo-YouTube-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=y_eISeVB_qo)
 ## Project Overview
 
 LearnEase is a comprehensive Learning Management System (LMS) built with modern web technologies, offering intelligent course management with AI-powered quiz generation and grading capabilities. The platform provides chapter-wise course playback, progress tracking, and monetization features through Stripe integration.
